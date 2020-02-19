@@ -9,7 +9,5 @@ public class ShowController {
 
 	@Autowired
 	private ShowService service;
-
-	
 	
 }
