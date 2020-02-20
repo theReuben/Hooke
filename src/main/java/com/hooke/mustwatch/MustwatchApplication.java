@@ -36,6 +36,8 @@ public class MustwatchApplication {
 				log.info(s.toString());
 			}
 			log.info("");
+			log.info("Entiries with title \"BSG\"");
+			log.info((repository.findByTitle("BSG")).toString());
 			log.info("---------------------------");
 			log.info("Successfully Read entries.");
 			log.info("");
@@ -46,7 +48,6 @@ public class MustwatchApplication {
 				s.setGenre("Drama");
 				log.info(s.toString());
 			}
-			log.info("");
 			log.info("-----------------------------");
 			log.info("Successfully Updated entries.");
 			log.info("");
@@ -57,7 +58,6 @@ public class MustwatchApplication {
 				repository.delete(s);
 			}
 			log.info(Long.toString(repository.count()));
-			log.info("");
 			log.info("-----------------------------");
 			log.info("Successfully Deleted entries.");
 			log.info("");
