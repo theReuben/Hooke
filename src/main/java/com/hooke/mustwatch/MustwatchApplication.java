@@ -23,9 +23,10 @@ public class MustwatchApplication {
 		return (args) -> {
 			log.info("Attempting to Create entries.");
 			log.info("-----------------------------");
-			repository.save(new Show("BSG", "SciFi"));
-			repository.save(new Show("Bojack Horseman", "Comedy"));
-			repository.save(new Show("Twin Peaks", "Weird"));
+			log.info((repository.save(new Show("BSG", "SciFi"))).toString());
+			log.info((repository.save(new Show("Bojack Horseman", "Comedy"))).toString());
+			log.info((repository.save(new Show("Twin Peaks", "Weird"))).toString());
+			log.info("-----------------------------");
 			log.info("Successfully Created entries.");
 			log.info("");
 

@@ -14,7 +14,7 @@ public class ShowService implements IShowService {
 
 	@Override
 	public List<Show> findAll() {
-		return repository.findAll();
+		return (List<Show>) repository.findAll();
 	}
 
 }

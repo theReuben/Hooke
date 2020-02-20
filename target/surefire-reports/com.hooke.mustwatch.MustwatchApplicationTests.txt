@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.hooke.mustwatch.MustwatchApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.984 s <<< FAILURE! - in com.hooke.mustwatch.MustwatchApplicationTests
+contextLoads  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+Caused by: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : com.hooke.mustwatch.model.Show; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.hooke.mustwatch.model.Show
+Caused by: org.hibernate.InstantiationException: No default constructor for entity:  : com.hooke.mustwatch.model.Show
+
