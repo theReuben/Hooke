@@ -11,7 +11,6 @@ import lombok.NonNull;
 
 @Data
 @Entity
-@Table
 public class Show {
 	
 	@Id

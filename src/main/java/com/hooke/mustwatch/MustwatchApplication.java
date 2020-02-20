@@ -29,42 +29,6 @@ public class MustwatchApplication {
 			log.info("-----------------------------");
 			log.info("Successfully Created entries.");
 			log.info("");
-
-			log.info("Attempting to Read entries.");
-			log.info("---------------------------");
-			for (Show s : repository.findAll()) {
-				log.info(s.toString());
-			}
-			log.info("");
-			log.info("Entiries with title \"BSG\"");
-			log.info((repository.findByTitle("BSG")).toString());
-			log.info("---------------------------");
-			log.info("Successfully Read entries.");
-			log.info("");
-
-			log.info("Attempting to Update entries.");
-			log.info("-----------------------------");
-			for (Show s : repository.findAll()) {
-				s.setGenre("Drama");
-				log.info(s.toString());
-			}
-			log.info("-----------------------------");
-			log.info("Successfully Updated entries.");
-			log.info("");
-
-			log.info("Attempting to Delete Entries.");
-			log.info("-----------------------------");
-			for (Show s : repository.findAll()) {
-				repository.delete(s);
-			}
-			log.info(Long.toString(repository.count()));
-			log.info("-----------------------------");
-			log.info("Successfully Deleted entries.");
-			log.info("");
-
-			log.info("----------------------------------------");
-			log.info("Successfully completed all CRUD actions.");
-			log.info("----------------------------------------");
 		};
 	}
 
